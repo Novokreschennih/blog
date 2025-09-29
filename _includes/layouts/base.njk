@@ -18,7 +18,6 @@
 	<body>
 		<div class="container">
 			<div class="main-box">
-
 				<header class="blog-header">
 					<h1 class="blog-title">
 						<a href="{{ '/' | url }}">{{ metadata.title }}</a>
@@ -31,11 +30,10 @@
 				</main>
 
 				<footer class="footer">
-					<p>&copy; {{ new Date().getFullYear() }} {{ metadata.author.name }}.</p>
+					<p>&copy; {{ metadata.currentYear }} {{ metadata.author.name }}.</p>
 				</footer>
 			</div>
 		</div>
-
 		<script src="{{ '/js/main.js' | url }}" defer></script>
 	</body>
 </html>
